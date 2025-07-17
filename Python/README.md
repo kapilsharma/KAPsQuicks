@@ -2,7 +2,7 @@
 
 These notes are for personal use of Kapil. However, it will be committed to git so they available for anyone to use.
 
-> [!importnat] These notes are useful for osmeone who have very good programming knowledge in any programming language and want to quickly start with Python.
+> [!importnat] These notes are useful for someone who have very good programming knowledge in any programming language and want to quickly start with Python.
 > 
 > **Example myself:** Since a decade I'm working mostly with PHP and Java Script (Node, Angular, React, Vue) but during my 20 years career, I worked on C, C++, Fortran (In college), Java, Python, Ruby (in 2004-10), Perl and Go Lang too. These are my notes for a quick remainder, in a very short period (less than a week, working 2–3 hours/day)
 
