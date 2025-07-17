@@ -35,9 +35,9 @@ if a < b:
 
 ## Match case
 
-Equivalent to switch in languages like PHP and JS
+Equivalent to `switch` in languages like PHP and JS
 
-Difference: We do not have break. Python `match` exists after first match
+Difference: We do not have break. Python `match` exits after first match
 
 ```python
 # num = 3
@@ -107,7 +107,7 @@ else:
 
 ## For loop
 
-For in python is not like for in C, PHP, JS, Java. It is more like `for in` on JS
+For in python is not like for in C, PHP, JS, Java. It is more like `for in` of JavaScript
 
 > We can use break, continue and pass as in while loop
 
@@ -119,7 +119,7 @@ for x in fruits:
     break
 ```
 
-### For like in other language and else
+### Using for loop as in other language and else
 
 Since we do not have initial value and increment like in other language, we can use `range(initial, final, increment)`
 
