@@ -21,6 +21,7 @@ The Reason is, if I already started adding some notes, I've some plans to keep a
 
 - Doing
   - [Python](Python/README.md)
+  - [Data Engineering](./DataEngineering/README.md) / [SnowFlake](./DataEngineering/SnowFlake/SnowFlake.md)
 - To do (In priority order)
   - Java
   - Java Script
