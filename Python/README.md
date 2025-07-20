@@ -11,18 +11,18 @@ These notes are for personal use of Kapil. However, it will be committed to git 
 ## Python topics
 
 - Beginner
-  - [01 Basics](docs/01basics.md)
-  - [02 Data Types](docs/02DataTypes.md)
+  - [01 Basics](Docs/01basics.md)
+  - [02 Data Types](Docs/02DataTypes.md)
   - 03 Input/Output
-  - 04 [loops](docs/04Loop_Decision.md#loops) and [decision](docs/04Loop_Decision.md#decisions)
-  - 05 [Functions](docs/05functions.md) and [Lambda](docs/05functions.md#lambda-function)
-  - [06 OOPs](docs/06Oops.md)
-    - [class](docs/06Oops.md#class)
-    - [Magic methods](docs/06Oops.md#magic-methods)
-    - [Inheritance](docs/06Oops.md#inheritance)
-      - [super](docs/06Oops.md#keyword-super)
-    - [Iterator](docs/06Oops.md#iterator)
-    - [Scope and global](docs/06Oops.md#scope-and-global)
+  - 04 [loops](Docs/04Loop_Decision.md#loops) and [decision](Docs/04Loop_Decision.md#decisions)
+  - 05 [Functions](Docs/05functions.md) and [Lambda](Docs/05functions.md#lambda-function)
+  - [06 OOPs](Docs/06Oops.md)
+    - [class](Docs/06Oops.md#class)
+    - [Magic methods](Docs/06Oops.md#magic-methods)
+    - [Inheritance](Docs/06Oops.md#inheritance)
+      - [super](Docs/06Oops.md#keyword-super)
+    - [Iterator](Docs/06Oops.md#iterator)
+    - [Scope and global](Docs/06Oops.md#scope-and-global)
   - 07 Error and Exceptions
 - Intermediate & standard library
   - 11 Modules
@@ -37,7 +37,7 @@ These notes are for personal use of Kapil. However, it will be committed to git 
     - 12g statistics
     - 12h datetime
 - Advanced / library
-  - [21 NumPy](docs/21NumPy.md)
+  - [21 NumPy](Docs/21NumPy.md)
   - 22 Pandas
   - Web Framework
     - Django

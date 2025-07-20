@@ -1,2 +1,18 @@
 # Ignore files related to IDEs
 .idea
+.vscode
+
+# ###############################
+# Do not commit any test code
+# ###############################
+# Files starting with test. or Test. at the root
+test.*
+# Files ending with test or Test at the root
+*test
+*Test
+# Test folders at root and in subdirectories
+# (It ignores tests, where we writes XUnit test cases and should be committed)
+/test
+**/test/
+# Local test code in local_test folders. Try to use that to avoid confision.
+**/local_test/
