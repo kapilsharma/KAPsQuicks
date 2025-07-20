@@ -1,0 +1,22 @@
+# ES Versions
+
+- ES1 (1997). First edition
+- ES2 (1998). Editorial changes
+- ES3 (1999). Added:
+  - Regular expressions
+  - Try/catch
+  - switch
+  - do-while
+- ES4 - Never released
+- ES5 (2009)
+- [ES6 or ECMAScript 2015](./ES2015/ES2015.md)
+- ECMAScript 2016
+- ECMAScript 2017
+- ECMAScript 2018
+- ECMAScript 2019
+- ECMAScript 2020
+- ECMAScript 2021
+- ECMAScript 2022
+- ECMAScript 2023
+- ECMAScript 2024
+- ECMAScript 2025
