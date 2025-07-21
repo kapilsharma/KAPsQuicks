@@ -22,6 +22,7 @@ The Reason is, if I already started adding some notes, I've some plans to keep a
 - Doing
   - [Python](Python/README.md)
   - [Java Script](./JavaScript/JavaScript.md)
+  - [Data Structure](./DSA/dsa.md)
 - To do (In priority order)
   - Java
   - Java Script
