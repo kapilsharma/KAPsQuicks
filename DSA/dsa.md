@@ -2,7 +2,7 @@
 
 ## Complexity
 
-- [BigO Notation](./Docs/big_o.md)
+- [BigO Notation](./Docs/01_big_o.md)
 
 ## Data Structure
 
