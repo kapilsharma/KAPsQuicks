@@ -5,4 +5,12 @@ These are very short notes, I took for myself. There is no specific order, just 
 I  do not recommend to use these notes for learning. May be you can do for very high level of reference.
 
 - [Create project](./Docs/01_initialize.md)
+
+Topics
+
+- Component
+- props
+- Hooks
+  - useState and hooks
+  - useEffect
 - 

@@ -15,8 +15,19 @@ Also, these notes have example that run in node environment, but they should als
 - Beginner
   - [Basics](./Docs/01Basics.md)
   - [Data Types](./Docs/02DataTypes.md)
+  - [Operators](./Docs/03_Operators.md)
+  - Loops and decision
+  - functions
+  - OOP
 - Intermediate
+  - [Asynchronous JS](./Docs/11_asynchronous.md)
+  - Inbuild object
+    - [Array](./Docs/121_array.md)
 - Advanced
+- Other topics
+  - [import and export](./Docs/O1_import_export.md)
+  - [Destructure](./Docs/O2_destructure.md)
+  - 
 
 ## ES Docs
 
@@ -40,3 +51,8 @@ However, now a days, JScript and ActionScript are not much in use so most people
 - ECMAScript 2023
 - ECMAScript 2024
 - ECMAScript 2025
+
+## Node JS
+
+Node is just an environment, which execute JavaScript. However, there are some concepts, which are not applicable for Js in browser. This section is to cover those topics
+

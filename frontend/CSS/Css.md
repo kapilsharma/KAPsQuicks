@@ -6,3 +6,4 @@ I'll be listing only some CSS3 things, that I didn't worked a lot with or had so
 
 - [Flexbox](./Docs/Flexbox.md)
 - [Width unit](./Docs/width_unit.md)
+- [Common tricks](./Docs/tricks.md)
