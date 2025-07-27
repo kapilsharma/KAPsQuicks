@@ -1,6 +1,12 @@
 # React hooks
 
-Functions starts with `use` are called Hooks.
+Functions starts with `use` are called React Hooks.
+
+## Two important rules
+
+- Call hook only inside of Component function
+- Call hook only on the top level
+  - (Notfunction within Component)
 
 ## List of hooks
 

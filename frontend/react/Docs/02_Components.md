@@ -142,3 +142,87 @@ export default function TabButton({children}) {
 ```
 
 > Approach to wrap child, which may include other components as well, is called `Component Composition`.
+
+### Remaining Properties
+
+Sometimes, we may want to destructure few properties, but not all. In that case, after destructuring required properties, we can catch remaining properties as `...props`. It can be any name, we need not to keep it as props. It may be `...remainingProperty` or `...anything`. Example
+
+```JSX
+function Section({ title, children, ...props}) {
+  return (
+    <section {...props}>
+      <h2>{title}</h2>
+      {children}
+    </section>
+  );
+}
+
+function ParentComponent() {
+  return (
+    <Section title="Some title" id="someId">
+      <p>This is the content (children)</p>
+    </Section>
+  );
+}
+```
+
+In this example, we have not captured id property, but due to `...props`, it will be captured and applied to section.
+
+### Two way binging
+
+Requirements:
+
+- We have to Make a Player component
+- We should pass the name (initialName) and show it.
+- With that, we have to show edit button.
+- When edit button is pressed
+  - Change button text to 'save'
+  - Chane name label to input textbox.
+- Save button should save the text.
+
+> There is no two way binding like in angular. So we hve to mix prop and event to achieve that.
+
+```JSX
+import { useState } from "react";
+
+function Player({ initialName, symbol}) {
+  const [playerName, setPlayerName] = useState(initialName);
+  const [ isEditing, setIsEditing ] = useState(false);
+
+  function handleEditClick() {
+    // We can't simply do 
+    // setIsEditing(!editing)
+    // It takes some to update, and we may not work on it immediately.
+    // Following ensure it is updated immediately.
+    setIsEditing(editing => !editing);
+  }
+
+  function handleChange(event) {
+    setPlayerName(event.target.value);
+  }
+
+  let editablePlayerName = <span className="player-name">{playerName}</span>;
+  if (isEditing) {
+    editablePlayerName = <input type="text" required value={playerName} onChange={handleChange} />
+  }
+
+  return (
+    <li>
+      <span className="player">
+        {editablePlayerName}
+        <span className="player-symbol">{ symbol }</span>
+      </span>
+      <button onClick={handleEditClick}>{isEditing ? 'Save' : 'Edit'}</button>
+    </li>
+  );
+}
+
+function ParentComponent() {
+  return(
+    <ol id="players">
+      <Player initialName="Player 1" symbol="X"/>
+      <Player initialName="Player 2" symbol="O"/>
+    </ol>
+  );
+}
+```
