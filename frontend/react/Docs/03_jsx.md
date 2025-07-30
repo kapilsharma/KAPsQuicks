@@ -158,3 +158,36 @@ return (
     )}
 )
 ```
+
+## Fragment
+
+- We can return only one tag from react.
+- If we need to return multiple tags, we generally wrap them in `<div>`.
+  - Downside: One extra div in the DOM
+- Earlier versions of React have Fragment as a solution
+
+```JSX
+import { Fragment } from 'react';
+ 
+// ... other code ...
+ 
+return (
+  <Fragment>
+    <h2>Welcome!</h2>
+    <p>React is awesome!</p>
+  </Fragment>
+);
+```
+
+However, now we can use special `<>` and `</>` tags.
+
+```JSX
+// no import needed
+ 
+return (
+  <>
+    <h2>Welcome!</h2>
+    <p>React is awesome!</p>
+  </>
+);
+```

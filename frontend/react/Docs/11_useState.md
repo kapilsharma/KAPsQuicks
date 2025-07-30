@@ -1,5 +1,11 @@
 # Hook: useState
 
+> [!Warning] Don't overuse
+> One of the commonmistake in React apps, new developers over use the state. This makes app difficult to manage. A golden rule:
+>
+> Calculate more, use state less. If we can calculate some value from existing states, we should do that.
+
+
 Example
 
 ```jsx
@@ -49,3 +55,62 @@ function MyButton({ count, onClick }) {
     );
 }
 ```
+
+## Updating Array or Object (Reference value) in stage
+
+Below is a quick example of Tic-Tac-Toe board.
+
+Here, we need to update the board, but simple update will not work. We need to make a copu of it, update it, and return
+
+```JSX
+import { useState } from "react";
+
+const initialGameBoard = [
+  [null, null, null],
+  [null, null, null],
+  [null, null, null],
+];
+
+export default function GameBoard() {
+  const [gameBoard, setGameBoard] = useState(initialGameBoard);
+
+  function handleSelectSquare(rowIndex, colIndex) {
+    setGameBoard((prevGameBoard) => {
+      // This is not recommended. Don't update current state directly.
+      // prevGameBoard[rowIndex][colIndex] = 'X';
+      // return prevGameBoard;
+
+      // Correct way
+      // Make copy
+      const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
+
+      // update
+      updatedBoard[rowIndex][colIndex] = 'X';
+
+      // return
+      return updatedBoard;
+    });
+  }
+
+  return(
+    <ol id="game-board">
+      {gameBoard.map((row, rowIndex) => (
+        <li key={rowIndex}>
+          <ol>
+            {row.map((playerSymbol, colIndex) => (
+              <li key={colIndex}>
+                <button onClick={() => handleSelectSquare(rowIndex, colIndex)}>{playerSymbol}</button>
+              </li>
+            ))}
+          </ol>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+```
+
+## Lifting state up
+
+When parent component need to know the state, set or managed in child component.
