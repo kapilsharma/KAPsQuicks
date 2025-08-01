@@ -8,5 +8,7 @@
 - [03_JSX](./Docs/03_jsx.md)
 - [04_events](./Docs/04_events.md)
 - [10_hooks](./Docs/10_hooks.md)
-- projects
-  - 901 Tic-Tac-Toe
+- 20 - Patterns
+  - [Comonent Composition](./Docs/21_ComponentComposition.md)
+- To Arrange
+  - [ErrorHandling](./Docs/901_errorHandling.md)
